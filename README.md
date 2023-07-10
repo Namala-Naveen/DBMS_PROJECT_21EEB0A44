@@ -11,4 +11,4 @@ can be used to manage the number of tickets sold ,
 track attendance, payment transactions and analyse 
 customer behaviour. The database can be stored in a
 computer system which reduces the work load on 
-humans
+humans.
