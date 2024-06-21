@@ -107,3 +107,12 @@ root.mainloop()
 6. **Run the tkinter Main Loop**: Start the tkinter main loop to run the application.
 
 This example provides a basic workflow and can be further customized based on your specific requirements. Ensure you replace the placeholder prediction logic with your actual machine learning model and prediction code.
+
+try:
+    header_image = Image.open("header.png")
+    header_photo = ImageTk.PhotoImage(header_image)
+    header_label = tk.Label(root, image=header_photo)
+    header_label.image = header_photo  # Keep a reference to avoid garbage collection
+    header_label.pack(pady=10)
+except Exception as e:
+    messagebox.showerror("Image Load Error", f"Error loading header image: {str(e)}")
